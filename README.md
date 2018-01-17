@@ -1,12 +1,17 @@
 # mini-autonomous-car-marc
+
 #max performans için
+
 #Pencere aç
 sudo nvpmodel -m 2
 sudo ~/jetson_clocks.sh
+
 #Performans takibi için
 sudo ~/tegrastats
 
+
 #Josticki açın. Titreşim tuşunu kullanarak kontrol edebilirsiniz.
+
 #Pencere aç
 sudo mv /dev/input/js1 /dev/input/js0
 cd racecar-ws
