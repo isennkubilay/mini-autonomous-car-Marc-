@@ -1,4 +1,4 @@
-# deeplearning collecting data
+# collect data
 
 #max performans için
 
