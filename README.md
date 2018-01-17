@@ -1,4 +1,4 @@
-# mini-autonomous-car-marc
+# deeplearning collecting data
 
 #max performans için
 
