@@ -1,34 +1,35 @@
 # collect data
 
-#max performans için
+#for maximum performance 
 
-#Pencere aç
+#Open terminal
 sudo nvpmodel -m 2
 sudo ~/jetson_clocks.sh
 
-#Performans takibi için
+#for observing performance
 sudo ~/tegrastats
 
 
-#Josticki açın. Titreşim tuşunu kullanarak kontrol edebilirsiniz.
+#Open Joystick.  When you use vibration button you can check if it works or not. 
 
-#Pencere aç
+#Open new terminal
 sudo mv /dev/input/js1 /dev/input/js0
 cd racecar-ws
 source devel/setup.bash
 roslaunch racecar teleop.launch
 
 
-#Pencere aç
+#Open new terminal
 cd racecar-ws
 source devel/setup.bash
 rosrun deep_learning collect_data.py
 
-#Otonom sürüş için
+#For autonomous mode
 rosrun deep_learning predict.py
 
-#Terminalde aşağıdaki komutu çalıştırın
+#Write this code on terminal
 ps -ef | grep predict.py
-#yandaki programın idsini aşağıdaki 8695 yerine yazın ve çalıştırın. /home/nvidia/racecar-ws/src/racecar-controllers/deep_learning/scripts/predict.py
+#
+/home/nvidia/racecar-ws/src/racecar-controllers/deep_learning/scripts/predict.py
 kill -9 8695
 
