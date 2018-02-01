@@ -29,7 +29,6 @@ rosrun deep_learning predict.py
 
 #Write this code on terminal
 ps -ef | grep predict.py
-#
-/home/nvidia/racecar-ws/src/racecar-controllers/deep_learning/scripts/predict.py
-kill -9 8695
+
+
 
